@@ -1,0 +1,54 @@
+# Loan Prediction Project
+
+## Description
+This project predicts loan approval (`Loan_Status`) based on applicant information using a **Random Forest Classifier**. It includes **data preprocessing, exploratory data analysis, model training, evaluation**, and **feature importance visualization**.
+
+## Key Features
+- Handles **missing values** in numerical and categorical columns.
+- Converts **categorical features** to numeric using `LabelEncoder`.
+- Performs **EDA** with graphs (`histograms`, `countplots`) to understand data distribution.
+- Trains a **Random Forest Classifier** for prediction.
+- Evaluates model performance using:
+  - **Accuracy**
+  - **Precision**
+  - **Recall**
+  - **F1-Score**
+  - **Confusion Matrix**
+- Performs **Cross-Validation** to check model stability.
+- Visualizes **Feature Importance**.
+
+## Libraries Used
+- `pandas` – Data manipulation  
+- `numpy` – Numerical operations  
+- `matplotlib`, `seaborn` – Data visualization  
+- `scikit-learn` – Machine learning (RandomForestClassifier, train_test_split, LabelEncoder, SimpleImputer, metrics)  
+
+## Dataset
+The dataset contains applicant information such as:  
+- `Gender`  
+- `Married`  
+- `ApplicantIncome`  
+- `LoanAmount`  
+- `Loan_Status`  
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/utsav378/Loan_Prediction_Project.git
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+
+Run the Python script:
+
+python loan_prediction.py
+
+## Visualizations
+
+### Loan Status Distribution
+![Loan Status Distribution](images/loan_status_distribution.png)
+
+### Gender Distribution
+![Gender Distribution](images/gender_distribution.png)
